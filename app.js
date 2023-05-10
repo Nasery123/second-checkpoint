@@ -1,5 +1,6 @@
 
 let mine = 0;
+let autoClick = 0
 let clickUpgrades = [
     {
         name: 'gas',
@@ -212,7 +213,8 @@ function addOilToMine() {
 // BUYING NEW CAR
 //
 function drawCar() {
-    let foundCar = automaticUpgrades[0]
+    let foundCar = automaticUpgrades[0];
+
     document.getElementById('newCar').innerText = foundCar.quantity;
 
 }
@@ -235,19 +237,19 @@ function buyCar() {
     drawCar()
     drawmine()
 
+
 }
 
 // This function will add to our total mine number
 function addCar() {
     let foundCar = automaticUpgrades[0];
     // console.log('here you are')
-    if (foundCar.quantity > 0) {
-        //mine -= 50;
-        mine = mine + (foundCar.multiplier * foundCar.quantity);
 
-    }
-    drawmine()
+    mine = mine + (foundCar.multiplier * foundCar.quantity);
+
 }
+drawmine()
+
 
 // This function will add to our total mine number
 function addDriver() {

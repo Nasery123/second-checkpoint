@@ -1,13 +1,20 @@
 body{
     background-color: lightgray;
     font-family: 'Castoro Titling', cursive;
+    background-image: url('https://i.pinimg.com/736x/9d/2c/74/9d2c74e4141621aa887d5917145fbf22.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
 
 
     /*font-family: 'Playfair Display', serif;*/
-    
+
 }
 
+/* .firstbox{
 
+
+} */
 
 
 
